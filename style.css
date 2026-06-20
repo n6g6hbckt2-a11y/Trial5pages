@@ -426,6 +426,71 @@ footer {
 
 }
 
+/* FOOTER */
+
+footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background: #2c3e50;
+
+  color: white;
+
+  margin-top: 40px;
+
+}
+
+/* =========================
+
+   WHATSAPP FLOAT BUTTON
+
+========================= */
+
+.whatsapp-float {
+
+  position: fixed;
+
+  width: 60px;
+
+  height: 60px;
+
+  bottom: 20px;
+
+  right: 20px;
+
+  background: #25D366;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+
+  text-decoration: none;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+
+  z-index: 9999;
+
+  transition: 0.2s ease;
+
+}
+
+.whatsapp-float:hover {
+
+  transform: scale(1.1);
+
+}
+
+
 /* =========================
 
    MOBILE
