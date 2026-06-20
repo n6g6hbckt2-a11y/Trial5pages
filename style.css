@@ -314,6 +314,42 @@ section {
 
 }
 
+.insta-gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 10px;
+
+}
+
+.insta-gallery img {
+
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+.insta-gallery img:hover {
+
+  transform: scale(1.05);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
 /* =========================
 
    CONTACT
