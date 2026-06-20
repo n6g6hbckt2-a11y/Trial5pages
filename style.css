@@ -1,4 +1,4 @@
-/* =========================
+* =========================
 
    GLOBAL
 
@@ -70,7 +70,7 @@ nav a:hover {
 
 /* =========================
 
-   HERO (HOME PAGE HEADER)
+   HERO
 
 ========================= */
 
@@ -178,7 +178,7 @@ section {
 
 /* =========================
 
-   ABOUT (OLD CLASS SUPPORT)
+   ABOUT (OLD SUPPORT)
 
 ========================= */
 
@@ -191,8 +191,6 @@ section {
   align-items: center;
 
 }
-
-/* keep compatibility */
 
 .about img {
 
@@ -331,6 +329,80 @@ section {
   border-radius: 12px;
 
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+}
+
+/* =========================
+
+   TESTIMONIALS (NEW)
+
+========================= */
+
+.testimonials-section {
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+  background: #fafafa;
+
+}
+
+.testimonials-section h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 30px;
+
+}
+
+.testimonials {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 20px;
+
+  max-width: 1000px;
+
+  margin: auto;
+
+}
+
+.testimonial {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  transition: transform 0.2s ease;
+
+}
+
+.testimonial:hover {
+
+  transform: translateY(-5px);
+
+}
+
+.testimonial p {
+
+  font-style: italic;
+
+  margin-bottom: 15px;
+
+  line-height: 1.6;
+
+}
+
+.testimonial strong {
+
+  color: #ff6ec4;
 
 }
 
