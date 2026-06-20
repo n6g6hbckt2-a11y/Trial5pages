@@ -1,4 +1,4 @@
-* =========================
+/* =========================
 
    GLOBAL
 
@@ -24,6 +24,18 @@ body {
 
 }
 
+/* Image safety fix */
+
+img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
 /* =========================
 
    NAV
@@ -46,11 +58,17 @@ nav {
 
   z-index: 1000;
 
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
 }
 
 nav a {
-
-  margin: 0 12px;
 
   text-decoration: none;
 
@@ -58,7 +76,11 @@ nav a {
 
   font-weight: bold;
 
+  padding: 5px 10px;
+
   transition: 0.2s ease;
+
+  display: inline-block;
 
 }
 
@@ -110,7 +132,9 @@ header p {
 
 ========================= */
 
-.btn, .whatsapp-btn {
+.btn,
+
+.whatsapp-btn {
 
   display: inline-block;
 
@@ -178,7 +202,7 @@ section {
 
 /* =========================
 
-   ABOUT (OLD SUPPORT)
+   ABOUT
 
 ========================= */
 
@@ -202,7 +226,7 @@ section {
 
 /* =========================
 
-   ABOUT (NEW HERO VERSION)
+   ABOUT HERO (optional page)
 
 ========================= */
 
@@ -268,6 +292,12 @@ section {
 
 }
 
+/* =========================
+
+   TRUST BOX
+
+========================= */
+
 .trust {
 
   margin: 20px 0;
@@ -284,7 +314,7 @@ section {
 
 /* =========================
 
-   GALLERY
+   GALLERY (INSTAGRAM STYLE)
 
 ========================= */
 
@@ -314,8 +344,6 @@ section {
 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-  display: block;
-
 }
 
 .insta-gallery img:hover {
@@ -326,11 +354,9 @@ section {
 
 }
 
-
-
 /* =========================
 
-   CONTACT
+   CONTACT BOX
 
 ========================= */
 
@@ -348,7 +374,7 @@ section {
 
 /* =========================
 
-   TESTIMONIALS (NEW)
+   TESTIMONIALS
 
 ========================= */
 
@@ -357,8 +383,6 @@ section {
   padding: 60px 20px;
 
   text-align: center;
-
-  background: #fafafa;
 
 }
 
@@ -410,8 +434,6 @@ section {
 
   margin-bottom: 15px;
 
-  line-height: 1.6;
-
 }
 
 .testimonial strong {
@@ -439,7 +461,6 @@ footer {
   margin-top: 40px;
 
 }
-
 
 /* =========================
 
@@ -489,7 +510,6 @@ footer {
 
 }
 
-
 /* =========================
 
    MOBILE
@@ -513,6 +533,8 @@ footer {
     text-align: center;
 
   }
+
+  .about img,
 
   .about-image img {
 
