@@ -24,15 +24,27 @@
 
 </nav>
 
-<section>
+<header class="page-header">
 
-  <h2>Book Now</h2>
+  <h1>Book Painting Pixie</h1>
 
-  <div class="contact-box">
+  <p>Quick booking options for parties, events & celebrations</p>
 
-    <p>Email: kitkat.83@hotmail.com</p>
+</header>
 
-    <p>Phone: 07818 072022</p>
+<section class="booking-grid">
+
+  <!-- Quick contact -->
+
+  <div class="card">
+
+    <h2>📱 Quick Booking</h2>
+
+    <p>Fastest way to check availability:</p>
+
+    <p><strong>Email:</strong> kitkat.83@hotmail.com</p>
+
+    <p><strong>Phone:</strong> 07818 072022</p>
 
     <a class="whatsapp-btn"
 
@@ -40,36 +52,35 @@
 
        target="_blank">
 
-      💬 WhatsApp Booking
+      💬 Message on WhatsApp
 
     </a>
 
   </div>
 
-</section>
+  <!-- Form -->
 
+  <div class="card">
 
-<section id="contact">
-
-  <h2>Contact & Booking</h2>
-
-  <div class="contact-box">
+    <h2>🗓️ Booking Form</h2>
 
     <form action="https://formspree.io/f/mjgdnged" method="POST">
 
       <input type="text" name="name" placeholder="Your Name" required>
 
-      
+      <input type="email" name="email" placeholder="Email Address" required>
 
-      <input type="email" name="kitkat.83@hotmail.com" placeholder="Email Address" required>
-
-      <input type="tel" name="07818072022" placeholder="Phone Number" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
 
       <input type="date" name="event_date" required>
 
-      <input type="text" name="event_location" placeholder="Event Location" required>
+      <input type="text" name="location" placeholder="Event Location" required>
 
-      <textarea name="message" placeholder="Tell me about your event (party size, ages, etc.)" rows="5"></textarea>
+      <textarea name="message"
+
+        placeholder="Tell me about your event (ages, number of children, theme etc.)"
+
+        rows="5"></textarea>
 
       <button type="submit">Send Booking Request</button>
 
