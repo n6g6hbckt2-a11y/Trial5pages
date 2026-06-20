@@ -288,7 +288,9 @@ section {
 
 ========================= */
 
-.gallery {
+.gallery,
+
+.insta-gallery {
 
   display: grid;
 
@@ -296,33 +298,11 @@ section {
 
   gap: 15px;
 
-}
-
-.gallery img {
-
   width: 100%;
 
-  border-radius: 12px;
-
-  transition: 0.2s ease;
-
 }
 
-.gallery img:hover {
-
-  transform: scale(1.03);
-
-}
-
-.insta-gallery {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
-  gap: 10px;
-
-}
+.gallery img,
 
 .insta-gallery img {
 
@@ -332,19 +312,23 @@ section {
 
   object-fit: cover;
 
+  display: block;
+
   border-radius: 14px;
 
-  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 
 }
 
+.gallery img:hover,
+
 .insta-gallery img:hover {
 
-  transform: scale(1.05);
+  transform: scale(1.04);
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
 }
 
