@@ -545,3 +545,121 @@ footer {
   }
 
 }
+
+/* =========================
+
+   BOOK PAGE STYLES
+
+========================= */
+
+.page-header {
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: #fff;
+
+}
+
+.booking-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+}
+
+.card {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+}
+
+.card h2 {
+
+  margin-top: 0;
+
+}
+
+input, textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 8px 0;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+}
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  background: #ff4fa3;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+}
+
+button:hover {
+
+  background: #e63e90;
+
+}
+
+.whatsapp-btn {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 10px 15px;
+
+  background: #25D366;
+
+  color: white;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+}
+
+@media (max-width: 768px) {
+
+  .booking-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
