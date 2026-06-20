@@ -288,21 +288,17 @@ section {
 
 ========================= */
 
-.gallery,
-
 .insta-gallery {
 
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
   gap: 15px;
 
-  width: 100%;
+  margin-top: 20px;
 
 }
-
-.gallery img,
 
 .insta-gallery img {
 
@@ -312,23 +308,21 @@ section {
 
   object-fit: cover;
 
-  display: block;
-
   border-radius: 14px;
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-}
+  display: block;
 
-.gallery img:hover,
+}
 
 .insta-gallery img:hover {
 
-  transform: scale(1.04);
+  transform: scale(1.05);
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
 }
 
