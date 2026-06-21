@@ -721,6 +721,20 @@ select {
 
 }
 
+.package-summary {
+
+  background: #f9f9f9;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #eee;
+
+}
+
 /* =========================
 
    MOBILE
