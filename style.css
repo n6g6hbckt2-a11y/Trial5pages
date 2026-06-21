@@ -98,13 +98,51 @@ nav a:hover {
 
 .page-header {
 
-  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  position: relative;
 
   color: white;
 
   text-align: center;
 
-  padding: 100px 20px;
+  padding: 120px 20px;
+
+  /* NEW HERO IMAGE */
+
+  background-image: url("hero.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+/* DARK OVERLAY FOR READABILITY */
+
+.page-header::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+}
+
+/* KEEP TEXT ABOVE OVERLAY */
+
+.page-header h1,
+
+.page-header p,
+
+.page-header a {
+
+  position: relative;
+
+  z-index: 1;
 
 }
 
