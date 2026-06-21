@@ -602,6 +602,36 @@ section {
 
 }
 
+.package-summary {
+
+  margin-top: 30px;
+
+  padding: 20px;
+
+  background: #fafafa;
+
+  border-radius: 12px;
+
+  border: 1px solid #eee;
+
+}
+
+.package-summary h3 {
+
+  margin-top: 0;
+
+  color: #ff6ec4;
+
+}
+
+.package-summary p {
+
+  margin-bottom: 15px;
+
+  line-height: 1.5;
+
+}
+
 
 /* =========================
 
