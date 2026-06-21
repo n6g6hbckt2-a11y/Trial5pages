@@ -236,6 +236,8 @@ section {
 
 .about-hero {
 
+  background: #fafafa;
+     
   min-height: 100vh;
 
   display: flex;
