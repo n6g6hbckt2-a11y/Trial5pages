@@ -454,17 +454,17 @@ section {
 
 .packages-grid {
 
-  display: flex;
+  display: grid;
 
-  flex-wrap: wrap;
-
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 30px;
 
   max-width: 1200px;
 
   margin: 0 auto;
+
+  align-items: stretch;
 
 }
 
@@ -491,6 +491,18 @@ section {
   transition: transform 0.3s ease;
 
   border: 1px solid #eee;
+
+}
+
+.package-card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100%;
 
 }
 
@@ -721,4 +733,10 @@ textarea {
 
   }
 
+   .packages-grid {
+
+  grid-template-columns: 1fr;
+
+}
+   
 }
