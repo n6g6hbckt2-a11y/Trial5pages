@@ -44,7 +44,7 @@ nav a {
   transition: 0.2s ease;
 }
 nav a:hover {
-  color: #ff6ec4;
+  color: #b8005f;
   background: rgba(255, 110, 196, 0.1);
 }
 
@@ -124,7 +124,8 @@ section {
 }
 .btn {
   background: linear-gradient(135deg, #ff9800, #ff6ec4);
-  color: white;
+  color: #2c2c2c;
+  font-weight: 800;
 }
 .btn:hover {
   transform: translateY(-2px);
@@ -132,7 +133,8 @@ section {
 }
 .whatsapp-btn {
   background: #25D366;
-  color: white;
+  color: #1a1a1a;
+  font-weight: 800;
 }
 .whatsapp-btn:hover {
   transform: translateY(-2px);
