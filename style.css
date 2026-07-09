@@ -162,11 +162,17 @@ section {
   gap: 50px;
   align-items: center;
 }
+.about-image {
+  flex: 1 1 420px;
+}
 .about-image img {
   width: 100%;
-  max-width: 420px;
+  max-width: 600px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+.about-text {
+  flex: 1 1 420px;
 }
 .about-text h1 {
   font-size: 36px;
