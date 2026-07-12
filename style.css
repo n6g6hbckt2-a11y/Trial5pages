@@ -193,18 +193,61 @@ section {
    GALLERY
 ========================= */
 .insta-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
+  columns: 5 220px;
+  column-gap: 14px;
 }
 .insta-gallery img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
   border-radius: 12px;
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  break-inside: avoid;
 }
 .insta-gallery img:hover {
-  transform: scale(1.04);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  .insta-gallery {
+    columns: 2 160px;
+  }
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.lightbox-overlay.active {
+  display: flex;
+}
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
 }
 
 /* =========================
