@@ -198,6 +198,23 @@ section {
   grid-auto-rows: 8px;
   gap: 14px;
 }
+/* Fallback for plain <img> tags used directly inside .insta-gallery
+   (e.g. the homepage "Popular Designs" preview grid), which aren't
+   wrapped in .gallery-item and have no JS measuring their height.
+   Without this, they'd collapse to the 8px auto-row and overflow
+   into whatever section comes after. */
+.insta-gallery > img {
+  grid-row: span 30;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+.insta-gallery > img:hover {
+  transform: scale(1.04);
+}
 .gallery-item {
   position: relative;
   border-radius: 12px;
