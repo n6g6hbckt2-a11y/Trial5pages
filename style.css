@@ -258,6 +258,8 @@ section {
   }
 }
 
+/* zoom hint on thumbnails */
+
 /* =========================
    MINI GALLERY (Recent Designs strips on location pages)
 ========================= */
@@ -356,7 +358,6 @@ section {
   font-size: 13px;
   margin-top: 4px;
 }
-
 
 /* =========================
    TESTIMONIALS
