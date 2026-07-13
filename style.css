@@ -259,6 +259,33 @@ section {
 }
 
 /* =========================
+   MINI GALLERY (Recent Designs strips on location pages)
+========================= */
+.mini-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.mini-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
+}
+.mini-gallery img:hover {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .mini-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
    LIGHTBOX
 ========================= */
 .lightbox-overlay {
