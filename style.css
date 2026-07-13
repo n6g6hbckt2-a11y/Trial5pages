@@ -263,8 +263,10 @@ section {
 ========================= */
 .mini-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 460px;
+  margin: 0 auto;
 }
 .mini-gallery img {
   width: 100%;
@@ -281,7 +283,7 @@ section {
 
 @media (max-width: 768px) {
   .mini-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 320px;
   }
 }
 
